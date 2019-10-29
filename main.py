@@ -1,4 +1,5 @@
 import lib as l
+import time
 
 if __name__ == "__main__":
     while True:
@@ -11,5 +12,7 @@ if __name__ == "__main__":
             break
         else:
             print("Você nao digitou uma resposta valida.")
+    start_time = time.time()
     l.read()
     l.res()
+    print("--- {} seconds ---".format((time.time() - start_time)))
